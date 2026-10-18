@@ -1,0 +1,35 @@
+seed: 42
+data:
+  journeys: 8
+  duration_seconds: 24
+  sampling_rate: 50
+  devices: [device_a, device_b, device_c]
+  placements: [seat, pocket, hand, fixed_horizontal, fixed_vertical]
+  routes: [route_a, route_b, route_c]
+  anomaly_rate: 0.12
+  noise: 0.08
+preprocessing:
+  window_seconds: 2.0
+  stride_seconds: 1.0
+  filter: bandpass
+  low_hz: 0.5
+  high_hz: 20.0
+  normalize_orientation: true
+training:
+  epochs: 4
+  batch_size: 32
+  learning_rate: 0.001
+  patience: 2
+  hidden_size: 32
+  class_weighting: true
+  mixed_precision: true
+risk:
+  medium: 0.40
+  high: 0.65
+  critical: 0.85
+  consecutive_windows: 2
+  cooldown_seconds: 30
+experiments:
+  quick: true
+  include_xgboost: true
+

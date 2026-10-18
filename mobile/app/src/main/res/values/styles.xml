@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.RailSense" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#2588FF</item>
+        <item name="android:windowBackground">#020B16</item>
+        <item name="android:statusBarColor">#020B16</item>
+        <item name="android:navigationBarColor">#020B16</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
